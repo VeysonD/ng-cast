@@ -1,7 +1,7 @@
 var app = angular.module('video-player', [])
- .config(function($sceDelegateProvider) {
-   $sceDelegateProvider.resourceUrlWhitelist([
-     'self',
-     'https://www.youtube.com/**'
-   ]);
- });
+  .config(function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+      'self',
+      'https://www.youtube.com/**'
+    ]);
+  });

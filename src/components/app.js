@@ -1,12 +1,15 @@
 angular.module('video-player')
+  .controller('appController', function() {
+    this.hello = 'hi';
+    this.selectVideo = () => {};
+    this.searchResults = () => {};
+    this.currentVideo = window.exampleVideoData[0];
+    this.videos = window.exampleVideoData;
+    this.onClick = () => {};
+  })
   .component('app', {
-    controller: function myAppController() {
-      this.selectVideo = () => {};
-      this.searchResults = () => {};
-      this.currentVideo = {};
-      this.videos = [];
-    },
-    templateUrl: '/src/templates/app.html'
+    controller: 'appController',
+    templateUrl: 'src/templates/app.html'
   });
 
 console.log('hi');
