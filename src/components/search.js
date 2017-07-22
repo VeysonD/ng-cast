@@ -1,8 +1,8 @@
 angular.module('video-player')
   .component('search', {
-    controller: function mySearchController() {
-      this.result = () => {};
-
+    bindings: {
+      result: '<'
     },
+
     templateUrl: 'src/templates/search.html'
   });

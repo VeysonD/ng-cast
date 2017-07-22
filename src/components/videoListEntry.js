@@ -1,11 +1,8 @@
 angular.module('video-player')
   .component('videoListEntry', {
     bindings: {
-      video: '<';
+      video: '<',
+      snippet: '<',
     },
     templateUrl: 'src/templates/videoListEntry.html'
   });
-
-  //
-  // controller: function myVideoListEntryController() {
-  // },

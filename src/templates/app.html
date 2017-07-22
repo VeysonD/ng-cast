@@ -1,7 +1,7 @@
 <div id="app container">
   <nav class="navbar">
     <div class="col-md-6 col-md-offset-3">
-      <search><h5><em>search</em> Component goes here</h5></search>
+      <search result="$ctrl.result"><h5><em>search</em> Component goes here</h5></search>
     </div>
   </nav>
   <div class="row">
@@ -12,6 +12,7 @@
     <div class="col-md-5">
       <video-list
         videos="$ctrl.videos"
+        onClick="$ctrl.onClick"
         >
         <h5>
           <em>videoList</em>
