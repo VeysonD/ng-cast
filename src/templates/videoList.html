@@ -2,7 +2,7 @@
   <!-- {{ $ctrl.videos[$index].snippet.title }} -->
 
   <video-list-entry
-  ng-click="$ctrl.onClick($index)"
+  on-click="$ctrl.onClick"
   video="$ctrl.videos[$index]"
   snippet="$ctrl.videos[$index].snippet"
   ng-repeat="video in $ctrl.videos track by $index"

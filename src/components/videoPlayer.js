@@ -1,7 +1,7 @@
 angular.module('video-player')
   .controller('videoPlayerController', function() {
     this.youtubeURL = (url) => {
-      console.log({url});
+      //console.log({url});
       return url ? `https://www.youtube.com/embed/${url}` : '';
     };
   })
