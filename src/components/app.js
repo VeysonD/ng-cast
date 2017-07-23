@@ -1,16 +1,20 @@
 angular.module('video-player')
   .controller('appController', function(youTube) {
     this.selectVideo = () => {};
-    // this.searchResults = () => {};
+
     this.videos = window.exampleVideoData;
     this.currentVideo = window.exampleVideoData[0];
 
     this.onClick = (video) => {
-      console.log({video});
+      this.currentVideo = video;
     };
+
     this.result = (value) => {
+
       var text = document.getElementsByClassName('form-control')[0].value;
+      var input = this.input;
       console.log('text', text);
+      console.log(youTube);
       youTube.search(text, this.searchResults);
     };
     this.searchResults = (data) => {
@@ -19,10 +23,7 @@ angular.module('video-player')
     };
 
 
-
-    // console.log(youTube);
     youTube.search('pancakes', data => {
-      // console.log('data', JSON.stringify(data, null, 2));
       this.videos = data;
       this.currentVideo = this.videos[0];
     });
